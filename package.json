@@ -1,5 +1,9 @@
 {
-  "private": true,
+  "name": "modern-riot",
+  "version": "0.0.1",
+  "description": "The neat web frontend setup with modern JavaScript syntax, modules and frameworks",
+  "author": "Niklas Ek <ek.niklas@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack -p",
