@@ -1,10 +1,19 @@
-import store from '../store.js'
+import {signals, state} from '../app.js'
+import './color-title.tag'
 
 <app>
-  <span>hej</span>
+  <div>
+    <color-title
+      color={ state.get().example.color }
+      title={ state.get().example.title }
+      ></color-title>
+    <button onclick={ () => signals.example.colorChanged({color: 'red'}) }>Red</button> |
+    <button onclick={ () => signals.example.colorChanged({color: 'blue'}) }>Blue</button>
+  </div>
 
-  <script type="es6">
-    
-    console.log()
+  <script>
+    this.state = state
+    this.signals = signals
+    state.on('update', this.update)
   </script>
 </app>

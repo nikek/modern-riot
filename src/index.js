@@ -1,13 +1,8 @@
-import './style.less' // This is a hook to make webpack package the css for us
+// This is a hook to make webpack package the css for us
+import './style.less'
 
 import 'riot'
 import './tags/app.tag'
-import './tags/title.tag.js'
+import './tags/title.tag'
 
-import Controller from 'cerebral'
-import Model from 'cerebral-model-baobab'
-
-const controller = Controller(Model({}))
-
-riot.mount('app', {controller: controller})
-riot.mount('title')
+riot.mount('*')

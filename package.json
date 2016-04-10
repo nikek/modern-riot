@@ -28,7 +28,10 @@
   },
   "dependencies": {
     "cerebral": "^0.33.31",
+    "cerebral-addons": "^0.5.3",
     "cerebral-model-baobab": "^0.4.8",
+    "cerebral-module-devtools": "^0.5.4",
+    "cerebral-module-router": "^0.13.1",
     "riot": "^2.3.12"
   }
 }
